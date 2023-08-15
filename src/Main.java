@@ -26,7 +26,6 @@ public class Main {
 
 
         System.out.println(milk.toString());
-
 /*
         Map<String, Integer> test = new HashMap<>();
         Map<String, Integer> test1 = new HashMap<>();

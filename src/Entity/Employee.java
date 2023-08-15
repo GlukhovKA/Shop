@@ -3,23 +3,53 @@ package Entity;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс <b>Сотрудник</b> с параметрами: <b>fullName</b>, <b>cash</b>,
+ * <b>salary</b> и <b>employeeSkills</b>.
+ * @see Entity.Human
+ * @author Glukhov K. A.
+ * @version 0.0.6
+ * @since 0.0.2
+*/
 public class Employee extends Human {
-    private int Salary;
+
+    /** Параметр <b>Зарплата</b> */
+    private int salary;
+
+    /** Список <b>Навыков сотрудника</b> */
     List<Skill> employeeSkills = new ArrayList<>();
 
+    /**
+     * Конструктор - создание экземпляра класса <b>Сотрудник</b>
+     * @param fullName 'Фамилия Имя Отчество'
+    */
     public Employee(String fullName) {
         super(fullName);
     }
 
+    /**
+     * Функция получения значения параметра {@link Employee#salary}
+     * @return размер зарплаты
+    */
     public int getSalary() {
-        return Salary;
-    }
-    public void setSalary(int salary) {
-        Salary = salary;
+        return salary;
     }
 
+    /**
+     * Процедура присваивания значения параметру {@link Employee#salary}
+     * @param salary зарплата сотрудника
+    */
+    public void setSalary(int salary) {
+        salary = salary;
+    }
+
+    /**
+     * Процедура добавления нового навыка сотруднику {@link Employee#employeeSkills}
+     * @param newSkill новый навык
+     * @deprecated <b>Некорректная проверка!</b> (Возможно дублирование)
+    */
     public void addSkill(Skill newSkill){
-        if (employeeSkills.isEmpty()){
+        if (employeeSkills.isEmpty()){      //требуются доработки, тк есть возможность дублирования
             employeeSkills.add(newSkill);
         }
     }
