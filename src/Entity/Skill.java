@@ -19,6 +19,8 @@ public class Skill {
     * @see SkillType */
     public SkillType skillType;
 
+    /*--------------------------------------------------------------*/
+
     /**
      * Конструктор - создание экземпляра класса <b>Навыков</b>
      * @param skillType наименование навыка
@@ -69,7 +71,7 @@ public class Skill {
     /**
      * Процедура увеличения значения параметра {@link Skill#level} на заданное число единиц
      * @param points кол-во очков
-     */
+    */
     public void addPoints(int points) {
             this.points += points;
         System.out.println(levelUp());
