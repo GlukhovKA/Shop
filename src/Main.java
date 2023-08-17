@@ -1,4 +1,5 @@
 import Entity.Product;
+import Entity.Shop;
 import Entity.Skill;
 import Enums.Category;
 import Enums.SkillType;
@@ -13,19 +14,12 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Product milk = new Product(
-                "Княгинино",
-                "Лучшее молоко в Нижнем Новгороде",
-                Category.DAIRY,
-                100,
-                12548001,
-                Unit.LITRE
-        );
+
 
         Skill skill = new Skill(SkillType.CASHIER);
 
-
-        System.out.println(milk.toString());
+        Shop shop = new Shop("Магазинчик", 8, 22);
+        System.out.println(shop.isOpen());
 /*
         Map<String, Integer> test = new HashMap<>();
         Map<String, Integer> test1 = new HashMap<>();

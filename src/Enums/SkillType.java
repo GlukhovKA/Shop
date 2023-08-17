@@ -20,7 +20,7 @@ public enum SkillType {
     /** <b>Грузчик</b> */
     LOADER("Грузчик");
 
-    private String translation;
+    private final String translation;
 
     SkillType(String translation) {
         this.translation = translation;

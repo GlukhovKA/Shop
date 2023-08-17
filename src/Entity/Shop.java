@@ -1,5 +1,8 @@
 package Entity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Класс <b>Магазин</b> с параметрами: <b>name</b>, <b>timeOpen</b>, <b>timeClose</b>,
  * <b>bankAccount</b> и <b>salaryFund</b>.
@@ -13,10 +16,10 @@ public class Shop {
     public String name;
 
     /** Параметр <b>Время открытия магазина</b> */
-    public int timeOpen;
+    public int timeOpen;  //  8:00
 
     /** Параметр <b>Время закрытия магазина</b> */
-    public int timeClose;
+    public int timeClose; // 22:00
 
     /** Параметр <b>Состояние банковского счета</b> */
     int bankAccount;
@@ -55,12 +58,12 @@ public class Shop {
     }
 
     /** Функция получения состояния магазина
-     * @return Открыт или закрыт
-     * @deprecated Отсутствует логика работы
-     * (добавить связь с {@link Shop#timeOpen} и {@link Shop#timeClose})
+     * @return true or false
     */
     public Boolean isOpen(){
-        return true;
+        Date date = new Date();
+        SimpleDateFormat formatForTime = new SimpleDateFormat("HH");
+        return ((Integer.parseInt(formatForTime.format(date)) > timeOpen) & (Integer.parseInt(formatForTime.format(date)) < timeClose));
     }
 
 }

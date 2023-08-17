@@ -42,19 +42,16 @@ public class Employee extends Human {
      * @param salary зарплата сотрудника
     */
     public void setSalary(int salary) {
-        salary = salary;
+        this.salary = salary;
     }
 
     /**
      * Процедура добавления нового навыка сотруднику {@link Employee#employeeSkills}
      * @param newSkill новый навык
-     * @deprecated <b>Некорректная проверка!</b> (Возможно дублирование)
     */
-    public void addSkill(Skill newSkill){
-        if (employeeSkills.isEmpty()){      //требуются доработки, тк есть возможность дублирования
+    void addSkill(Skill newSkill){
+        if (employeeSkills.isEmpty() || !employeeSkills.contains(newSkill)){
             employeeSkills.add(newSkill);
         }
     }
-
-
 }

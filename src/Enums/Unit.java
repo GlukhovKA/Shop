@@ -20,7 +20,7 @@ public enum Unit {
     /** <b>Литр</b> */
     LITRE("л.");
 
-    private String translation;
+    private final String translation;
 
     Unit(String translation) {
         this.translation = translation;

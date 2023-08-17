@@ -33,7 +33,7 @@ public class Showcase {
      * @return true or false
     */
     public boolean isFull(){
-        return capacity==productsInShowcase.values().stream().mapToInt(Integer::intValue).sum();
+        return capacity == productsInShowcase.values().stream().mapToInt(Integer::intValue).sum();
     }
 
     /**
@@ -47,13 +47,12 @@ public class Showcase {
     /**
      * Функция получения списка товаров, которые нужно пополнить на витринах
      * @deprecated <b>Некорректная проверка!</b> (только 10 разных товаров на полках магазина)
-     * @exception OutOfMemoryError
     */
     public Map<Product, Integer> getProductsForRefill() {
         Map<Product, Integer> productsForRefill = new HashMap<>();
-        productsInShowcase.keySet().forEach(prod ->{
-            if (!productsInShowcase.get(prod).equals(capacity/10)){
-                productsForRefill.put(prod, (capacity/10) - productsInShowcase.get(prod));
+        productsInShowcase.keySet().forEach(product ->{
+            if (!productsInShowcase.get(product).equals(capacity/10)){
+                productsForRefill.put(product, (capacity/10) - productsInShowcase.get(product));
             }
         });
         return productsForRefill;
