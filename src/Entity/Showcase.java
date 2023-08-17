@@ -22,7 +22,7 @@ public class Showcase {
 
     /**
      * Конструктор - создание экземпляра класса <b>Витрина</b>
-     * @param storageCapacity Вместимость витрин
+     * @param capacity Вместимость витрин
     */
     public Showcase(int capacity) {
         this.capacity = capacity;
