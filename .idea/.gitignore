@@ -6,4 +6,4 @@
 # Ignored directory
 
 # Compile
-**/out
+**/out/
