@@ -1,5 +1,8 @@
 package Core.ShopCores;
 
+
+import Core.ShopCores.EmployeeWork;
+
 /**
  * Класс <b>Логики работы магазина</b>.
  * @author MART 2023

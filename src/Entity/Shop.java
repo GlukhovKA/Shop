@@ -22,10 +22,10 @@ public class Shop {
     public int timeClose; // 22:00
 
     /** Параметр <b>Состояние банковского счета</b> */
-    int bankAccount;
+    private int bankAccount;
 
     /** Параметр <b>Зарплатный фонд магазина</b> */
-    int salaryFund;
+    private int salaryFund;
 
     /*--------------------------------------------------------------*/
 

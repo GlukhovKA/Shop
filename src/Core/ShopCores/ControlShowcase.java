@@ -6,5 +6,9 @@ package Core.ShopCores;
  * @version 0.1.0
  * @since 0.1.0
  */
-public class ControlShowcase {
+public class ControlShowcase implements Runnable {
+    @Override
+    public void run() {
+
+    }
 }

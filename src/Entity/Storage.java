@@ -18,16 +18,16 @@ import java.util.Map;
 public class Storage {
 
     /** Параметр <b>Вместимость склада</b> */
-    int storageCapacity;
+    int storageCapacity; // 100 freespace= 10
 
     /** Параметр <b>Зарезервирование пространство</b> */
-    int reservedCapacity;
+    int reservedCapacity; // = 10
 
     /** Словарь <b>Продукты на складе</b> */
-    public Map<Product, Integer> productToAmount = new HashMap<>();
+    Map<Product, Integer> productToAmount = new HashMap<>();
 
     /** Словарь <b>Продукты заказанные на склад</b> */
-    public Map<Product, Integer> orderedProducts = new HashMap<>();
+    Map<Product, Integer> orderedProducts = new HashMap<>();
 
     /*--------------------------------------------------------------*/
 
@@ -69,8 +69,13 @@ public class Storage {
      * @param amount Кол-во ед. товара
     */
     private void addProduct(Product product, int amount) {
-        int newAmount = productToAmount.containsKey(product) ? amount + productToAmount.get(product) : amount;
-        productToAmount.put(product, newAmount);
+        int newAmount;
+        if (productToAmount.containsKey(product)) {
+            newAmount = amount + productToAmount.get(product);
+        } else{
+            newAmount = amount;
+            productToAmount.put(product, newAmount);
+        }
     }
 
     /**
@@ -91,6 +96,7 @@ public class Storage {
      * Процедура перемещения заданного числа единиц заказанного товара на склад
      * @param product Товар
      * @param amount Кол-во ед. товара
+     * @deprecated Работает не корректно
      */
     public void moveOrderedProductToStorage(Product product, int amount){
         reservedCapacity -= amount;

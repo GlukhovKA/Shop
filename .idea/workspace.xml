@@ -4,23 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a95c8e4-7fc7-4588-b13f-f55dca869a1d" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/Core/ControlShowcase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/ControlStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/DistributiveStorageCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/EmployeeWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/ShopCores.java" afterDir="false" />
+    <list default="true" id="2a95c8e4-7fc7-4588-b13f-f55dca869a1d" name="Changes" comment="add Core Classes">
+      <change afterPath="$PROJECT_DIR$/src/Core/Server/ClientCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/ShopCores/ControlCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/employee.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/Entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Entity/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/Entity/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Entity/Human.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Shop/Entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Entity/Shop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Shop/Entity/Showcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Entity/Showcase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/Entity/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Entity/Storage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/Enums/SkillType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Enums/SkillType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/Enums/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Enums/Unit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Shop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shop/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ControlShowcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ControlShowcase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/EmployeeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/EmployeeWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ShopCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ShopCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Showcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Showcase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enums/SkillType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enums/SkillType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enums/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enums/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +43,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GlukhovKA"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GlukhovKA&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -52,18 +58,23 @@
     </option>
   </component>
   <component name="ProjectId" id="2U6wFubKH0eBVOUezNdF86aCMMB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -109,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692273572852</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Core Classes">
+      <option name="closed" value="true" />
+      <created>1692294460563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692294460563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,8 +151,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="add Core Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Core Classes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -12,7 +12,7 @@ public class Human {
     String fullName;
 
     /** Параметр <b>Деньги</b> */
-    private int cash;
+    int cash;
 
     /*--------------------------------------------------------------*/
 

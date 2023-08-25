@@ -14,7 +14,7 @@ import java.util.List;
 public class Employee extends Human {
 
     /** Параметр <b>Зарплата</b> */
-    private int salary;
+    private volatile int salary;
 
     /** Список <b>Навыков сотрудника</b> */
     List<Skill> employeeSkills = new ArrayList<>();
@@ -33,7 +33,7 @@ public class Employee extends Human {
      * Функция получения значения параметра {@link Employee#salary}
      * @return размер зарплаты
     */
-    public int getSalary() {
+    public  int getSalary() {
         return salary;
     }
 
@@ -49,9 +49,21 @@ public class Employee extends Human {
      * Процедура добавления нового навыка сотруднику {@link Employee#employeeSkills}
      * @param newSkill новый навык
     */
-    void addSkill(Skill newSkill){
+    public void addSkill(Skill newSkill){
         if (employeeSkills.isEmpty() || !employeeSkills.contains(newSkill)){
             employeeSkills.add(newSkill);
         }
+    }
+
+    void goToWork(){
+
+    };
+
+    @Override
+    public String toString() {
+        return  "Cотрудник " + fullName + ":" + '\n' +
+                "Зарплата:" + salary + '\n' +
+                "Навыки:" + employeeSkills + '\n' +
+                "Деньги:" + cash  + '\n';
     }
 }
