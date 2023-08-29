@@ -84,12 +84,30 @@ public class Storage {
      * @param amount Кол-во ед. товара
     */
     public void orderOneProduct(Product product, int amount){
-        if (isFull()){
+        if (storageFreeSpace() >= amount){
             reservedCapacity += amount;
             orderedProducts.put(product, amount);
         }else {
-            System.out.println("Склад заполнен!");
+            System.out.println("Нет места на складе!" + '\n' + "Доступно: " + storageFreeSpace());
         }
+    }
+
+    /**
+     * Процедура оформления доставки заданного числа единиц товаров на склад
+     * @param products Товары в Map
+     */
+    public void orderAnyProducts(Map<Product, Integer> products){
+        products.keySet().forEach(product -> {
+            orderOneProduct(product, products.get(product));
+        });
+    }
+
+    /**
+     * Процедура оформления доставки заданного числа единиц товаров на склад
+     * @deprecated НЕТ НИКАКОЙ ЛОГИКИ И ВОЗВРАЩАЕТ ПУСТОЙ 'MAP'
+     */
+    public Map<Product, Integer> productsForOrder(){
+        return new HashMap<>();
     }
 
     /**

@@ -59,6 +59,13 @@ public class Showcase {
     }
 
     /**
+     * Функция получения списка товаров на витрине магазина
+    */
+    public Map<Product, Integer> getProductsInShowcase() {
+        return productsInShowcase;
+    }
+
+    /**
      * Процедура перемещения заданного числа единиц со склада на витрины
      * @param product Товар
      * @param amount Кол-во ед. товара

@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a95c8e4-7fc7-4588-b13f-f55dca869a1d" name="Changes" comment="add ScheduledExecutorService for ctrl shop cores.">
+    <list default="true" id="2a95c8e4-7fc7-4588-b13f-f55dca869a1d" name="Changes" comment="new version of proj">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shop/Core/ShopCores/ControlCash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Core/ShopCores/ControlCash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shop/Core/ShopCores/EmployeeWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Core/ShopCores/EmployeeWork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Server/ClientCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Server/ClientCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Server/DistributiveStorageCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Server/DistributiveStorageCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ControlCash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ControlCash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ControlShowcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ControlShowcase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ControlStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ControlStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/EmployeeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/EmployeeWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ShopCores/ShopCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ShopCores/ShopCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Showcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Showcase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693320910266</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new version of proj">
+      <option name="closed" value="true" />
+      <created>1693328749057</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693328749057</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +170,8 @@
     <MESSAGE value="add Core Classes" />
     <MESSAGE value="add Core Classes and Threads" />
     <MESSAGE value="add ScheduledExecutorService for ctrl shop cores." />
-    <option name="LAST_COMMIT_MESSAGE" value="add ScheduledExecutorService for ctrl shop cores." />
+    <MESSAGE value="new version of proj" />
+    <option name="LAST_COMMIT_MESSAGE" value="new version of proj" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
