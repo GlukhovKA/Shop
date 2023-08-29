@@ -55,9 +55,9 @@ public class ControlStorage implements Runnable{
             }
         }
         if (storage.storageFreeSpace() >= storage.getStorageCapacity() * 0.5){
-            // !!!Написать логику автоматического заказа товаров на склад.
+            // !!! Написать логику автоматического заказа товаров на склад.
              storage.orderAnyProducts(storage.productsForOrder());
-            // !!!Разгрузка товара при получении.
+            // !!! Разгрузка товара при получении.
         }
     }
 }
