@@ -30,14 +30,6 @@ public class ControlCash implements Runnable{
 
     @Override
     public void run() {
-        //while(true) { // ПОДУМАТЬ!!! ЭТОТ БЛОК ВЫПОЛНЯЕТСЯ ВСЕГДА
-            /*try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }*/
             System.out.println("Hi! I want your money");
-        //}
-
     }
 }

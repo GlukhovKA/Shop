@@ -24,7 +24,7 @@ public class Storage {
     int reservedCapacity; // = 10
 
     /** Словарь <b>Продукты на складе</b> */
-    Map<Product, Integer> productToAmount = new HashMap<>();
+    public Map<Product, Integer> productToAmount = new HashMap<>();
 
     /** Словарь <b>Продукты заказанные на склад</b> */
     Map<Product, Integer> orderedProducts = new HashMap<>();
@@ -103,4 +103,18 @@ public class Storage {
         productToAmount.put(product, amount);
         orderedProducts.remove(product);
     }
+
+    public int getStorageCapacity() {
+        return storageCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return  "Информация о складе:" + '\n' +
+                "Размер склада: " + storageCapacity + '\n' + '\n' +
+                "Зарезервированное место:" + reservedCapacity + '\n' + '\n' +
+                "Продукты на складе:" + '\n' + productToAmount + '\n' + '\n' +
+                "Доставка:" + '\n' + orderedProducts;
+    }
+
 }
