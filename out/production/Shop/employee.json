@@ -1,0 +1,48 @@
+{
+  "0": {
+    "salary": 0,
+    "employeeSkills": [
+      {
+        "level": 0,
+        "points": 0,
+        "skillType": "CASHIER"
+      },
+      {
+        "level": 0,
+        "points": 0,
+        "skillType": "LOADER"
+      }
+    ],
+    "fullName": "Андреев Андрей Анреевич",
+    "cash": 0
+  },
+  "1": {
+    "salary": 0,
+    "employeeSkills": [
+      {
+        "level": 0,
+        "points": 0,
+        "skillType": "CASHIER"
+      },
+      {
+        "level": 0,
+        "points": 0,
+        "skillType": "LOADER"
+      }
+    ],
+    "fullName": "Алексев Алексей Алексеевич",
+    "cash": 0
+  },
+  "2": {
+    "salary": 0,
+    "employeeSkills": [
+      {
+        "level": 0,
+        "points": 0,
+        "skillType": "MERCHANDISER"
+      }
+    ],
+    "fullName": "Федотов Федот Федотович",
+    "cash": 0
+  }
+}
